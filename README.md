@@ -64,6 +64,10 @@ https://encode.karmanirvami.com/api/v1/stackstats?since=2022-07-01%2000:00:00&un
 
 or
 
+https://encode.karmanirvami.com/api/v1/stackstats?since=2022-07-01 00:00:00&until=2022-07-02 00:00:00
+
+or
+
 http://88.80.188.249:5000/api/v1/stackstats?since=2022-07-01%2000:00:00&until=2022-07-02%2000:00:00
 
 Hosted on Linode CLoud Environment (https://www.linode.com/)
