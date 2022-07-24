@@ -17,14 +17,14 @@ The high-level objective is to deliver an application that runs as a long-runnin
 
 Communication with StackExchange API and statistics
 The service communicates with the StackExchange API and perform the following tasks:
-•	Retrieve the StackOverflow answer data for the given date/time range (Endpoint: https://api.stackexchange.com/docs/answers).
-•	Retrieve the comment data for this set of answers  (Endpoint: https://api.stackexchange.com/docs/comments-on-answers).
+Retrieve the StackOverflow answer data for the given date/time range (Endpoint: https://api.stackexchange.com/docs/answers).
+Retrieve the comment data for this set of answers  (Endpoint: https://api.stackexchange.com/docs/comments-on-answers).
 
 Calculates the following statistics:
-o	the total number of accepted answers.
-o	the average score for all the accepted answers.
-o	the average answer count per question.
-o	the comment count for each of the 10 answers with the highest score.
+The total number of accepted answers.
+The average score for all the accepted answers.
+The average answer count per question.
+The comment count for each of the 10 answers with the highest score.
 
 Response body example
 {
@@ -59,15 +59,19 @@ python-dateutil>=2.8.1
 python-dotenv>=0.17.1
 
 Demonstration Requests:
+
 https://encode.karmanirvami.com/api/v1/stackstats?since=2022-07-01%2000:00:00&until=2022-07-02%2000:00:00
+
 or
+
 http://88.80.188.249:5000/api/v1/stackstats?since=2022-07-01%2000:00:00&until=2022-07-02%2000:00:00
 
 Hosted on Linode CLoud Environment (https://www.linode.com/)
 
 DNS SETTINGS
+
 NGINX (https://www.nginx.com/)
 Forwards the traffic from 5000 to 443 port
 
 CLOUDFLARE (https://dash.cloudflare.com/)
-Is a free CDN tool that offers security and analysis tools
+Is a free CDN framework that offers security and analysis tools
