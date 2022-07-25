@@ -58,7 +58,7 @@ average_score = 0
 @app.route('/api/v1/stackstats', methods=['GET'])
 @cross_origin("*")
 def api_encode():
-    global i, statistics, avegare_answers_per_question, first10values, j, dict_answers_comments, count_accepted_answers, average_score, count_score, questionids, answerids
+    global i, statistics, avegare_answers_per_question, first10values, j, dict_answers_comments, count_accepted_answers, average_score, count_score, questionids, answerids, number0fcomments
 
     fromdate = request.args.get('since'.format(datetime.date.isoformat))
     convert_to_timestamp_since = datetime.datetime.strptime(fromdate, "%Y-%m-%d %H:%M:%S")
@@ -108,6 +108,7 @@ def api_encode():
     count_score = 0 
     first10values.clear()
     answerids_comments.clear()
+    number0fcomments.clear()
     j=0
     return a
 
