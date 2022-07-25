@@ -84,5 +84,5 @@ TESTS:
 1. Unittest Library was utilized 
 2. run python3 api_test.py
 3. There are 6 tests in total. 4 pass and 2 fail. The failures are because app.py uses queries in a proper request.
-The requests that pass are requests to the DNS and the IP that the API is hosted for 1 day (1st July 2022-2nd July 2022)
+The requests that pass are requests to the DNS and the IP that the FLASK API is hosted. For 1 day (1st July 2022-2nd July 2022)
 and for 2 days (1st July 2022-3rd July 2022) as an example. 
