@@ -20,7 +20,7 @@ count_score=0
 average_score = 0
 
 #FUNCTIONS
-#This is the function to count all requested statistics except last page
+#This is the function to count all requested statistics except last page 
 def function_is_accepted(resp, ii):
   y=0
   global count_accepted_answers, count_score
@@ -40,7 +40,7 @@ def function_is_accepted(resp, ii):
       y+=1
   return(count_accepted_answers)
 
-#Function to calculate the final requested statistical values of the last pasge
+#Function to calculate the final requested statistical values of the last page and calculates the oucome of the results which is returned
 def function_is_accepted_last_page(resp, size_last):
   y=0
   global count_accepted_answers, count_score, average_score, sort_answers_by_score
