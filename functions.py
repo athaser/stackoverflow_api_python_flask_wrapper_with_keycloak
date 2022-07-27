@@ -20,8 +20,6 @@ count_score=0
 average_score = 0
 
 #FUNCTIONS
-#Stack overflow queries 30-100 results each page. In this example page site was set 100. 
-#When 'has more' attribute is true it means that there are more results for the requested timeframe. 
 #This is the function to count all requested statistics except last page
 def function_is_accepted(resp, ii):
   y=0

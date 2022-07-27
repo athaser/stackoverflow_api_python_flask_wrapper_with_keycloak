@@ -53,6 +53,8 @@ def api_encode():
     todate = request.args.get('until'.format(datetime.date.isoformat))
     unix_time_until = function_convert_timestamp(todate)
 
+#Stack overflow queries 30-100 results each page. In this example page site was set 100
+#When 'has more' attribute is true it means that there are more results for the requested timeframe
 #First Request
     url = "https://api.stackexchange.com/2.3/answers?key=U4DMV*8nvpm3EOpvf69Rxw((&site=stackoverflow&pagesize={}&fromdate={}&todate={}&order=desc&sort=activity&filter=default&page={}".format(page_size, unix_time_since, unix_time_until, i)
     requests_cache.install_cache('demo_cache')
