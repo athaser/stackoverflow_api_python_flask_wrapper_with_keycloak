@@ -61,16 +61,16 @@ FILES:
 
 FUNCTIONS:
 
-app.py
+Functions in app.py file
 1. payload: the requested payload structure
 2. api_encode: tha most importand api function that calls all the other functions to calculate the statistical values
 3. main
 
-functions.py
+Functions in functions.py file
 1. function_is_accepted: calculates the statistical values of the data that is included in the pages while 'has_more' attribute is true. 'has_more' equals to true means that there are more pages contain data for the specific timeframe.
 2. function_is_accepted_last_page: calculates the final statistical values and rerurns them. 'has_more' equals to false
 
-timestamp.py
+Functions in timestamp.py file
 1. function_convert_timestamp: Converts timestamp from human form (2022-07-02 00:00:00) to unix form (1656633600) to use it in stackoverflow api
 
 
