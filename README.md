@@ -32,7 +32,9 @@ CALCULATES THE FOLLOWING STATISTICAL VALUES:
 CACHING LAYER
 
 A caching layer has also been implemented. The purpose of caching is to minimize the response time when executing the same request more than once.
-The caching layer that is used to the specific project is requests-cache>=0.9.5 (https://requests-cache.readthedocs.io/en/stable/)
+The caching layer that is used to the specific project is requests-cache>=0.9.5 (https://requests-cache.readthedocs.io/en/stable/).
+
+Redis cache is also installed in the docker-compose.yml and works together with requests-cahce:__pycache__ folder is the redis cache.
 
 REQUIREMENTS (requirement.txt):
 1. Flask>=2.0.1
