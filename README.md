@@ -73,6 +73,7 @@ timestamp.py
 
 
 DEMONSTRATION REQUESTS:
+
 https://encode.karmanirvami.com/api/v1/stackstats?since=2022-07-01%2000:00:00&until=2022-07-02%2000:00:00
 
 or
@@ -98,6 +99,6 @@ TESTS:
 2. run python3 api_test.py and python3 api_test_2.py
 3. There are 8 tests in api_test.py. 6 pass and 2 fail. The failures are because app.py uses queries in a proper request. The requests that pass are requests to the DNS and the IP that the FLASK API is hosted. For 1 day (1st July 2022-2nd July 2022)
 and for 2 days (1st July 2022-3rd July 2022) as an example. 
-4. There is just one test in api_test_2.py because of throttle violation in StackOverflow api in case there are 2 requests in the same time. The test pass
+4. There is just one test in api_test_2.py because of throttle violation in StackOverflow api in case there are 2 requests in the same time. The test passes
 5. All the functions were tested
 
