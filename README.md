@@ -48,7 +48,7 @@ REQUIREMENTS (requirement.txt):
 FILES:
 1. app.py the main flask-api file
 2. functions.py: contains the functions to process the data in order for the final static values to be calculated and the original - starting values
-3. timestamp.py: converts the timestamp from human form (2022-07-02 00:00:00) to unix form (1656633600)
+3. timestamp.py: converts the timestamp from human form (2022-07-01 00:00:00) to unix form (1656633600) and (2022-07-02 00:00:00) (1656720000)
 4. api_test.py: The file that contains 8 tests 6 pass and 2 fail. This file contains the test for the API, the timestamp function that is imported from the timestamp.py file and the function_is_accepted function that is imported from the function.py file
 5. api_test_2.py: The file contains one test for the function: function_is_accepted_last_page that is imported from the function.py file
 6. dockerfile: the docker setting
@@ -103,4 +103,15 @@ TESTS:
 and for 2 days (1st July 2022-3rd July 2022) as an example. 
 4. There is just one test in api_test_2.py because of throttle violation in StackOverflow api in case there are 2 requests in the same time. The test passes
 5. All the functions were tested
+
+
+KEYCLOAK:
+
+There are also different endpoints with KEYCLOAK configuration
+
+1. /token           accepts the token with OAUTH2 mechanism
+2. /login           login form that after succesfull login shows the user info and offers options for logout or see the payload
+3. /login_payload   login form that allows the user to see the payload after succesful login
+4. /logout          kills the session and logs out the user
+5. Test credentials (username: testuser, password: changeit)
 
