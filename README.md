@@ -41,9 +41,11 @@ REQUIREMENTS (requirement.txt):
 2. flask[async]>=2.0.1
 3. requests-cache>=0.9.5
 4. Flask-Cors>=3.0.10
-5. requests>=2.18.4
-6. python-dateutil>=2.8.1
-7. python-dotenv>=0.17.1
+5. flask-oidc>=1.4.0
+6. itsdangerous==2.0.1
+7. requests>=2.18.4
+8. python-dateutil>=2.8.1
+9. python-dotenv>=0.17.1
 
 FILES:
 1. app.py the main flask-api file
